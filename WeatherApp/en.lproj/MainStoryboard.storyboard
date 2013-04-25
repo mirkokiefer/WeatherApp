@@ -28,7 +28,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="14" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvJ-xQ-rbH">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="14 °C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvJ-xQ-rbH">
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,24 +38,17 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="°C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s09-Ef-HR2">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
                                     <constraint firstItem="7A4-GW-j7t" firstAttribute="baseline" secondItem="uga-jo-lGR" secondAttribute="baseline" type="default" id="4m2-cx-8FX"/>
-                                    <constraint firstItem="s09-Ef-HR2" firstAttribute="top" secondItem="XW7-Zz-443" secondAttribute="top" type="default" id="CMY-UT-8Va"/>
-                                    <constraint firstItem="lvJ-xQ-rbH" firstAttribute="top" secondItem="XW7-Zz-443" secondAttribute="top" type="default" id="Qky-Zf-zX4"/>
                                     <constraint firstItem="uga-jo-lGR" firstAttribute="top" secondItem="XW7-Zz-443" secondAttribute="top" constant="20" type="default" id="WVT-Yu-CBa"/>
                                     <constraint firstItem="7A4-GW-j7t" firstAttribute="centerY" secondItem="XW7-Zz-443" secondAttribute="centerY" type="default" id="Xw8-pD-916"/>
                                     <constraint firstAttribute="trailing" secondItem="uga-jo-lGR" secondAttribute="trailing" constant="20" type="default" id="d1V-xF-US8"/>
-                                    <constraint firstItem="lvJ-xQ-rbH" firstAttribute="centerX" secondItem="uga-jo-lGR" secondAttribute="centerX" type="default" id="gZt-R5-Nqs"/>
+                                    <constraint firstItem="lvJ-xQ-rbH" firstAttribute="top" secondItem="7A4-GW-j7t" secondAttribute="top" type="default" id="m7S-0P-jgt"/>
                                     <constraint firstItem="7A4-GW-j7t" firstAttribute="leading" secondItem="XW7-Zz-443" secondAttribute="leading" constant="20" type="default" id="owG-M1-zTo"/>
-                                    <constraint firstAttribute="trailing" secondItem="s09-Ef-HR2" secondAttribute="trailing" constant="20" type="default" id="peR-sf-kvk"/>
+                                    <constraint firstAttribute="trailing" secondItem="lvJ-xQ-rbH" secondAttribute="trailing" constant="20" type="default" id="uvs-PI-GmE"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="cityLabel" destination="7A4-GW-j7t" id="nKO-Mx-9FX"/>

@@ -11,9 +11,10 @@
 #import "LCTableViewController.h"
 #import "LCWeatherCell.h"
 #import "LCCityStore.h"
+#import "LCCity.h"
 
 @interface LCTableViewController () {
-  NSArray *_objects;
+  NSArray *_cities;
   CLLocationManager *_locationManager;
 }
 @end
@@ -36,20 +37,23 @@
 
 - (void)updateWeatherDataWithLocation:(CLLocation *)location {
   [LCCityStore citiesAtLocation:location withRadius:10 result:^(NSArray *array) {
-    _objects = array;
+    _cities = array;
     [self.tableView reloadData];
   }];
 }
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  NSLog(@"count %i", _objects.count);
-  return _objects.count;
+  NSLog(@"count %i", _cities.count);
+  return _cities.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   LCWeatherCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-  cell.cityLabel.text = @"Heidelberg";
+  LCCity *city = [_cities objectAtIndex:indexPath.row];
+  cell.cityLabel.text = city.name;
+  cell.temperatureLabel.text = [NSString stringWithFormat: @"%@ °C", city.temperature];
+  cell.conditionLabel.text = city.condition;
   return cell;
 }
 
