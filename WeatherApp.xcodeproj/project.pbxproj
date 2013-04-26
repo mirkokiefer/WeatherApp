@@ -8,18 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		3611A03042F44C31B339CBD1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5079F01FFCD4E778F720B73 /* libPods.a */; };
-		AC323656172A9EC3008E892F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC323642172A9EC3008E892F /* Default-568h@2x.png */; };
-		AC323657172A9EC3008E892F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AC323643172A9EC3008E892F /* Default.png */; };
-		AC323658172A9EC3008E892F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC323644172A9EC3008E892F /* Default@2x.png */; };
-		AC323659172A9EC3008E892F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC323645172A9EC3008E892F /* InfoPlist.strings */; };
-		AC32365A172A9EC3008E892F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC323647172A9EC3008E892F /* MainStoryboard.storyboard */; };
-		AC32365B172A9EC3008E892F /* LCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC32364A172A9EC3008E892F /* LCAppDelegate.m */; };
-		AC32365C172A9EC3008E892F /* LCCity.m in Sources */ = {isa = PBXBuildFile; fileRef = AC32364C172A9EC3008E892F /* LCCity.m */; };
-		AC32365D172A9EC3008E892F /* LCCityStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AC32364E172A9EC3008E892F /* LCCityStore.m */; };
-		AC32365E172A9EC3008E892F /* LCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC323650172A9EC3008E892F /* LCTableViewController.m */; };
-		AC32365F172A9EC3008E892F /* LCWeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC323652172A9EC3008E892F /* LCWeatherCell.m */; };
-		AC323660172A9EC3008E892F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC323653172A9EC3008E892F /* main.m */; };
-		AC323661172A9EC3008E892F /* WeatherApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC323654172A9EC3008E892F /* WeatherApp-Info.plist */; };
+		AC3236FD172AA708008E892F /* LCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3236D4172AA708008E892F /* LCAppDelegate.m */; };
+		AC3236FE172AA708008E892F /* LCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3236D6172AA708008E892F /* LCTableViewController.m */; };
+		AC3236FF172AA708008E892F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC3236D7172AA708008E892F /* InfoPlist.strings */; };
+		AC323700172AA708008E892F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3236D9172AA708008E892F /* MainStoryboard.storyboard */; };
+		AC323701172AA708008E892F /* 01d.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236DC172AA708008E892F /* 01d.png */; };
+		AC323702172AA708008E892F /* 01n.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236DD172AA708008E892F /* 01n.png */; };
+		AC323703172AA708008E892F /* 02d.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236DE172AA708008E892F /* 02d.png */; };
+		AC323704172AA708008E892F /* 02n.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236DF172AA708008E892F /* 02n.png */; };
+		AC323705172AA708008E892F /* 03d.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236E0172AA708008E892F /* 03d.png */; };
+		AC323706172AA708008E892F /* 03n.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236E1172AA708008E892F /* 03n.png */; };
+		AC323707172AA708008E892F /* 04d.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236E2172AA708008E892F /* 04d.png */; };
+		AC323708172AA708008E892F /* 04n.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236E3172AA708008E892F /* 04n.png */; };
+		AC323709172AA708008E892F /* 09d.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236E4172AA708008E892F /* 09d.png */; };
+		AC32370A172AA708008E892F /* 09n.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236E5172AA708008E892F /* 09n.png */; };
+		AC32370B172AA708008E892F /* 10d.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236E6172AA708008E892F /* 10d.png */; };
+		AC32370C172AA708008E892F /* 10n.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236E7172AA708008E892F /* 10n.png */; };
+		AC32370D172AA708008E892F /* 11d.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236E8172AA708008E892F /* 11d.png */; };
+		AC32370E172AA708008E892F /* 11n.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236E9172AA708008E892F /* 11n.png */; };
+		AC32370F172AA708008E892F /* 13d.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236EA172AA708008E892F /* 13d.png */; };
+		AC323710172AA708008E892F /* 13n.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236EB172AA708008E892F /* 13n.png */; };
+		AC323711172AA708008E892F /* 50d.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236EC172AA708008E892F /* 50d.png */; };
+		AC323712172AA708008E892F /* 50n.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236ED172AA708008E892F /* 50n.png */; };
+		AC323713172AA708008E892F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236EE172AA708008E892F /* Default-568h@2x.png */; };
+		AC323714172AA708008E892F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236EF172AA708008E892F /* Default.png */; };
+		AC323715172AA708008E892F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3236F0172AA708008E892F /* Default@2x.png */; };
+		AC323716172AA708008E892F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3236F2172AA708008E892F /* main.m */; };
+		AC323717172AA708008E892F /* WeatherApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC3236F3172AA708008E892F /* WeatherApp-Info.plist */; };
+		AC323718172AA708008E892F /* LCCity.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3236F7172AA708008E892F /* LCCity.m */; };
+		AC323719172AA708008E892F /* LCCityStore.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3236F9172AA708008E892F /* LCCityStore.m */; };
+		AC32371A172AA708008E892F /* LCWeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3236FC172AA708008E892F /* LCWeatherCell.m */; };
 		AC3C7BDF1729A9DA0067ACF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3C7BDE1729A9DA0067ACF2 /* UIKit.framework */; };
 		AC3C7BE11729A9DA0067ACF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3C7BE01729A9DA0067ACF2 /* Foundation.framework */; };
 		AC3C7BE31729A9DA0067ACF2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3C7BE21729A9DA0067ACF2 /* CoreGraphics.framework */; };
@@ -28,24 +46,42 @@
 
 /* Begin PBXFileReference section */
 		74E6B0BBD36E4A8BABC9B81F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		AC323642172A9EC3008E892F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		AC323643172A9EC3008E892F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		AC323644172A9EC3008E892F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		AC323646172A9EC3008E892F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AC323648172A9EC3008E892F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		AC323649172A9EC3008E892F /* LCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAppDelegate.h; sourceTree = "<group>"; };
-		AC32364A172A9EC3008E892F /* LCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAppDelegate.m; sourceTree = "<group>"; };
-		AC32364B172A9EC3008E892F /* LCCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCity.h; sourceTree = "<group>"; };
-		AC32364C172A9EC3008E892F /* LCCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCity.m; sourceTree = "<group>"; };
-		AC32364D172A9EC3008E892F /* LCCityStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCityStore.h; sourceTree = "<group>"; };
-		AC32364E172A9EC3008E892F /* LCCityStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCityStore.m; sourceTree = "<group>"; };
-		AC32364F172A9EC3008E892F /* LCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTableViewController.h; sourceTree = "<group>"; };
-		AC323650172A9EC3008E892F /* LCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableViewController.m; sourceTree = "<group>"; };
-		AC323651172A9EC3008E892F /* LCWeatherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCWeatherCell.h; sourceTree = "<group>"; };
-		AC323652172A9EC3008E892F /* LCWeatherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCWeatherCell.m; sourceTree = "<group>"; };
-		AC323653172A9EC3008E892F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AC323654172A9EC3008E892F /* WeatherApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WeatherApp-Info.plist"; sourceTree = "<group>"; };
-		AC323655172A9EC3008E892F /* WeatherApp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WeatherApp-Prefix.pch"; sourceTree = "<group>"; };
+		AC3236D3172AA708008E892F /* LCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAppDelegate.h; sourceTree = "<group>"; };
+		AC3236D4172AA708008E892F /* LCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAppDelegate.m; sourceTree = "<group>"; };
+		AC3236D5172AA708008E892F /* LCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTableViewController.h; sourceTree = "<group>"; };
+		AC3236D6172AA708008E892F /* LCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableViewController.m; sourceTree = "<group>"; };
+		AC3236D8172AA708008E892F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC3236DA172AA708008E892F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AC3236DC172AA708008E892F /* 01d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01d.png; sourceTree = "<group>"; };
+		AC3236DD172AA708008E892F /* 01n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01n.png; sourceTree = "<group>"; };
+		AC3236DE172AA708008E892F /* 02d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02d.png; sourceTree = "<group>"; };
+		AC3236DF172AA708008E892F /* 02n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02n.png; sourceTree = "<group>"; };
+		AC3236E0172AA708008E892F /* 03d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03d.png; sourceTree = "<group>"; };
+		AC3236E1172AA708008E892F /* 03n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03n.png; sourceTree = "<group>"; };
+		AC3236E2172AA708008E892F /* 04d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04d.png; sourceTree = "<group>"; };
+		AC3236E3172AA708008E892F /* 04n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04n.png; sourceTree = "<group>"; };
+		AC3236E4172AA708008E892F /* 09d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 09d.png; sourceTree = "<group>"; };
+		AC3236E5172AA708008E892F /* 09n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 09n.png; sourceTree = "<group>"; };
+		AC3236E6172AA708008E892F /* 10d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10d.png; sourceTree = "<group>"; };
+		AC3236E7172AA708008E892F /* 10n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10n.png; sourceTree = "<group>"; };
+		AC3236E8172AA708008E892F /* 11d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11d.png; sourceTree = "<group>"; };
+		AC3236E9172AA708008E892F /* 11n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11n.png; sourceTree = "<group>"; };
+		AC3236EA172AA708008E892F /* 13d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13d.png; sourceTree = "<group>"; };
+		AC3236EB172AA708008E892F /* 13n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13n.png; sourceTree = "<group>"; };
+		AC3236EC172AA708008E892F /* 50d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50d.png; sourceTree = "<group>"; };
+		AC3236ED172AA708008E892F /* 50n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50n.png; sourceTree = "<group>"; };
+		AC3236EE172AA708008E892F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AC3236EF172AA708008E892F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AC3236F0172AA708008E892F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AC3236F2172AA708008E892F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC3236F3172AA708008E892F /* WeatherApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WeatherApp-Info.plist"; sourceTree = "<group>"; };
+		AC3236F4172AA708008E892F /* WeatherApp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WeatherApp-Prefix.pch"; sourceTree = "<group>"; };
+		AC3236F6172AA708008E892F /* LCCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCity.h; sourceTree = "<group>"; };
+		AC3236F7172AA708008E892F /* LCCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCity.m; sourceTree = "<group>"; };
+		AC3236F8172AA708008E892F /* LCCityStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCityStore.h; sourceTree = "<group>"; };
+		AC3236F9172AA708008E892F /* LCCityStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCityStore.m; sourceTree = "<group>"; };
+		AC3236FB172AA708008E892F /* LCWeatherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCWeatherCell.h; sourceTree = "<group>"; };
+		AC3236FC172AA708008E892F /* LCWeatherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCWeatherCell.m; sourceTree = "<group>"; };
 		AC3C7BDB1729A9DA0067ACF2 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3C7BDE1729A9DA0067ACF2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AC3C7BE01729A9DA0067ACF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,35 +106,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AC323641172A9EC3008E892F /* src */ = {
+		AC3236D1172AA708008E892F /* src */ = {
 			isa = PBXGroup;
 			children = (
-				AC323642172A9EC3008E892F /* Default-568h@2x.png */,
-				AC323643172A9EC3008E892F /* Default.png */,
-				AC323644172A9EC3008E892F /* Default@2x.png */,
-				AC323645172A9EC3008E892F /* InfoPlist.strings */,
-				AC323647172A9EC3008E892F /* MainStoryboard.storyboard */,
-				AC323649172A9EC3008E892F /* LCAppDelegate.h */,
-				AC32364A172A9EC3008E892F /* LCAppDelegate.m */,
-				AC32364B172A9EC3008E892F /* LCCity.h */,
-				AC32364C172A9EC3008E892F /* LCCity.m */,
-				AC32364D172A9EC3008E892F /* LCCityStore.h */,
-				AC32364E172A9EC3008E892F /* LCCityStore.m */,
-				AC32364F172A9EC3008E892F /* LCTableViewController.h */,
-				AC323650172A9EC3008E892F /* LCTableViewController.m */,
-				AC323651172A9EC3008E892F /* LCWeatherCell.h */,
-				AC323652172A9EC3008E892F /* LCWeatherCell.m */,
-				AC323653172A9EC3008E892F /* main.m */,
-				AC323654172A9EC3008E892F /* WeatherApp-Info.plist */,
-				AC323655172A9EC3008E892F /* WeatherApp-Prefix.pch */,
+				AC3236D2172AA708008E892F /* controller */,
+				AC3236D7172AA708008E892F /* InfoPlist.strings */,
+				AC3236D9172AA708008E892F /* MainStoryboard.storyboard */,
+				AC3236DB172AA708008E892F /* images */,
+				AC3236F1172AA708008E892F /* misc */,
+				AC3236F5172AA708008E892F /* model */,
+				AC3236FA172AA708008E892F /* view */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		AC3236D2172AA708008E892F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC3236D3172AA708008E892F /* LCAppDelegate.h */,
+				AC3236D4172AA708008E892F /* LCAppDelegate.m */,
+				AC3236D5172AA708008E892F /* LCTableViewController.h */,
+				AC3236D6172AA708008E892F /* LCTableViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AC3236DB172AA708008E892F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AC3236DC172AA708008E892F /* 01d.png */,
+				AC3236DD172AA708008E892F /* 01n.png */,
+				AC3236DE172AA708008E892F /* 02d.png */,
+				AC3236DF172AA708008E892F /* 02n.png */,
+				AC3236E0172AA708008E892F /* 03d.png */,
+				AC3236E1172AA708008E892F /* 03n.png */,
+				AC3236E2172AA708008E892F /* 04d.png */,
+				AC3236E3172AA708008E892F /* 04n.png */,
+				AC3236E4172AA708008E892F /* 09d.png */,
+				AC3236E5172AA708008E892F /* 09n.png */,
+				AC3236E6172AA708008E892F /* 10d.png */,
+				AC3236E7172AA708008E892F /* 10n.png */,
+				AC3236E8172AA708008E892F /* 11d.png */,
+				AC3236E9172AA708008E892F /* 11n.png */,
+				AC3236EA172AA708008E892F /* 13d.png */,
+				AC3236EB172AA708008E892F /* 13n.png */,
+				AC3236EC172AA708008E892F /* 50d.png */,
+				AC3236ED172AA708008E892F /* 50n.png */,
+				AC3236EE172AA708008E892F /* Default-568h@2x.png */,
+				AC3236EF172AA708008E892F /* Default.png */,
+				AC3236F0172AA708008E892F /* Default@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		AC3236F1172AA708008E892F /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				AC3236F2172AA708008E892F /* main.m */,
+				AC3236F3172AA708008E892F /* WeatherApp-Info.plist */,
+				AC3236F4172AA708008E892F /* WeatherApp-Prefix.pch */,
+			);
+			path = misc;
+			sourceTree = "<group>";
+		};
+		AC3236F5172AA708008E892F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				AC3236F6172AA708008E892F /* LCCity.h */,
+				AC3236F7172AA708008E892F /* LCCity.m */,
+				AC3236F8172AA708008E892F /* LCCityStore.h */,
+				AC3236F9172AA708008E892F /* LCCityStore.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AC3236FA172AA708008E892F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AC3236FB172AA708008E892F /* LCWeatherCell.h */,
+				AC3236FC172AA708008E892F /* LCWeatherCell.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		AC3C7BD21729A9DA0067ACF2 = {
 			isa = PBXGroup;
 			children = (
-				AC323641172A9EC3008E892F /* src */,
+				AC3236D1172AA708008E892F /* src */,
 				AC3C7BDD1729A9DA0067ACF2 /* Frameworks */,
 				AC3C7BDC1729A9DA0067ACF2 /* Products */,
 				74E6B0BBD36E4A8BABC9B81F /* Pods.xcconfig */,
@@ -179,12 +273,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC323656172A9EC3008E892F /* Default-568h@2x.png in Resources */,
-				AC323657172A9EC3008E892F /* Default.png in Resources */,
-				AC323658172A9EC3008E892F /* Default@2x.png in Resources */,
-				AC323659172A9EC3008E892F /* InfoPlist.strings in Resources */,
-				AC32365A172A9EC3008E892F /* MainStoryboard.storyboard in Resources */,
-				AC323661172A9EC3008E892F /* WeatherApp-Info.plist in Resources */,
+				AC3236FF172AA708008E892F /* InfoPlist.strings in Resources */,
+				AC323700172AA708008E892F /* MainStoryboard.storyboard in Resources */,
+				AC323701172AA708008E892F /* 01d.png in Resources */,
+				AC323702172AA708008E892F /* 01n.png in Resources */,
+				AC323703172AA708008E892F /* 02d.png in Resources */,
+				AC323704172AA708008E892F /* 02n.png in Resources */,
+				AC323705172AA708008E892F /* 03d.png in Resources */,
+				AC323706172AA708008E892F /* 03n.png in Resources */,
+				AC323707172AA708008E892F /* 04d.png in Resources */,
+				AC323708172AA708008E892F /* 04n.png in Resources */,
+				AC323709172AA708008E892F /* 09d.png in Resources */,
+				AC32370A172AA708008E892F /* 09n.png in Resources */,
+				AC32370B172AA708008E892F /* 10d.png in Resources */,
+				AC32370C172AA708008E892F /* 10n.png in Resources */,
+				AC32370D172AA708008E892F /* 11d.png in Resources */,
+				AC32370E172AA708008E892F /* 11n.png in Resources */,
+				AC32370F172AA708008E892F /* 13d.png in Resources */,
+				AC323710172AA708008E892F /* 13n.png in Resources */,
+				AC323711172AA708008E892F /* 50d.png in Resources */,
+				AC323712172AA708008E892F /* 50n.png in Resources */,
+				AC323713172AA708008E892F /* Default-568h@2x.png in Resources */,
+				AC323714172AA708008E892F /* Default.png in Resources */,
+				AC323715172AA708008E892F /* Default@2x.png in Resources */,
+				AC323717172AA708008E892F /* WeatherApp-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,30 +338,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC32365B172A9EC3008E892F /* LCAppDelegate.m in Sources */,
-				AC32365C172A9EC3008E892F /* LCCity.m in Sources */,
-				AC32365D172A9EC3008E892F /* LCCityStore.m in Sources */,
-				AC32365E172A9EC3008E892F /* LCTableViewController.m in Sources */,
-				AC32365F172A9EC3008E892F /* LCWeatherCell.m in Sources */,
-				AC323660172A9EC3008E892F /* main.m in Sources */,
+				AC3236FD172AA708008E892F /* LCAppDelegate.m in Sources */,
+				AC3236FE172AA708008E892F /* LCTableViewController.m in Sources */,
+				AC323716172AA708008E892F /* main.m in Sources */,
+				AC323718172AA708008E892F /* LCCity.m in Sources */,
+				AC323719172AA708008E892F /* LCCityStore.m in Sources */,
+				AC32371A172AA708008E892F /* LCWeatherCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AC323645172A9EC3008E892F /* InfoPlist.strings */ = {
+		AC3236D7172AA708008E892F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AC323646172A9EC3008E892F /* en */,
+				AC3236D8172AA708008E892F /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		AC323647172A9EC3008E892F /* MainStoryboard.storyboard */ = {
+		AC3236D9172AA708008E892F /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AC323648172A9EC3008E892F /* en */,
+				AC3236DA172AA708008E892F /* en */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -318,8 +430,8 @@
 			baseConfigurationReference = 74E6B0BBD36E4A8BABC9B81F /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "src/WeatherApp-Prefix.pch";
-				INFOPLIST_FILE = "src/WeatherApp-Info.plist";
+				GCC_PREFIX_HEADER = "src/misc/WeatherApp-Prefix.pch";
+				INFOPLIST_FILE = "src/misc/WeatherApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -330,8 +442,8 @@
 			baseConfigurationReference = 74E6B0BBD36E4A8BABC9B81F /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "src/WeatherApp-Prefix.pch";
-				INFOPLIST_FILE = "src/WeatherApp-Info.plist";
+				GCC_PREFIX_HEADER = "src/misc/WeatherApp-Prefix.pch";
+				INFOPLIST_FILE = "src/misc/WeatherApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
