@@ -46,7 +46,6 @@
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  NSLog(@"count %i", _cities.count);
   return _cities.count;
 }
 

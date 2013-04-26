@@ -109,13 +109,13 @@
 		AC3236D1172AA708008E892F /* src */ = {
 			isa = PBXGroup;
 			children = (
+				AC3236F5172AA708008E892F /* model */,
+				AC3236FA172AA708008E892F /* view */,
 				AC3236D2172AA708008E892F /* controller */,
 				AC3236D7172AA708008E892F /* InfoPlist.strings */,
 				AC3236D9172AA708008E892F /* MainStoryboard.storyboard */,
 				AC3236DB172AA708008E892F /* images */,
 				AC3236F1172AA708008E892F /* misc */,
-				AC3236F5172AA708008E892F /* model */,
-				AC3236FA172AA708008E892F /* view */,
 			);
 			path = src;
 			sourceTree = "<group>";
