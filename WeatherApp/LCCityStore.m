@@ -19,15 +19,15 @@
   ];
 }
 
-+ (float)fahrenheitToCelsius:(float)fahrenheitValue {
-  return (fahrenheitValue - 32) * 5 / 9;
++ (float)kelvinToCelsius:(float)kelvinValue {
+  return kelvinValue - 273.15;
 }
 
 + (NSArray *)parseCities:(NSArray *)json {
   return [json map:^id(NSDictionary *obj) {
     NSString *name = obj[@"name"];
-    NSNumber *temperatureFahrenheit = obj[@"main"][@"temp"];
-    int temperatureCelsius = [self fahrenheitToCelsius:temperatureFahrenheit.floatValue];
+    NSNumber *temperatureKelvin = obj[@"main"][@"temp"];
+    int temperatureCelsius = [self kelvinToCelsius:temperatureKelvin.floatValue];
     NSString *temperature = [NSString stringWithFormat:@"%i", temperatureCelsius];
     NSString *condition = obj[@"weather"][0][@"description"];
     return [LCCity cityWithName:name temperature:temperature condition:condition];
@@ -37,8 +37,10 @@
 + (void)citiesAtLocation:(CLLocation *)location withRadius:(double)kmRadius result:(ArrayBlock)result {
   float lat = location.coordinate.latitude;
   float lon = location.coordinate.longitude;
+  
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-    NSURL *url = [NSURL URLWithString:@"http://api.openweathermap.org/data/2.1/find/city?lat=55.5&lon=37.5&radius=10&lang=en&units=metric"];
+    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.1/find/city?lat=%f&lon=%f&radius=100&lang=en", lat, lon];
+    NSURL *url = [NSURL URLWithString: urlString];
     NSData *json = [NSData dataWithContentsOfURL:url];
     NSDictionary *data = [NSJSONSerialization JSONObjectWithData:json options:0 error:nil];
     
