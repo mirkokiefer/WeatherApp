@@ -9,8 +9,8 @@
 #import "LCCityStore.h"
 #import "LCCity.h"
 
-#define LCRadius 10
 #define LCWeatherAPI @"http://api.openweathermap.org/data/2.1/find/city?lat=%f&lon=%f&radius=%i&lang=en"
+//#define LCUseTestData
 
 @implementation LCCityStore
 
@@ -37,17 +37,22 @@
   }];
 }
 
-+ (void)citiesAtLocation:(CLLocation *)location withRadius:(double)kmRadius result:(ArrayBlock)result {
-  float lat = location.coordinate.latitude;
-  float lon = location.coordinate.longitude;
-  
++ (NSDictionary *)fetchCitiesFromAPIWithCoordinates:(CLLocationCoordinate2D)coords radius:(int)radius {
+  NSString *urlString = [NSString stringWithFormat: LCWeatherAPI, coords.latitude, coords.longitude, radius];
+  NSURL *url = [NSURL URLWithString: urlString];
+  NSData *json = [NSData dataWithContentsOfURL:url];
+  return [NSJSONSerialization JSONObjectWithData:json options:0 error:nil];
+}
+
++ (void)citiesAtCoordinates:(CLLocationCoordinate2D)coords withRadius:(int)kmRadius result:(ArrayBlock)result {
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-    NSString *urlString = [NSString stringWithFormat: LCWeatherAPI, lat, lon, LCRadius];
-    NSURL *url = [NSURL URLWithString: urlString];
-    NSData *json = [NSData dataWithContentsOfURL:url];
-    NSDictionary *data = [NSJSONSerialization JSONObjectWithData:json options:0 error:nil];
     
+    #ifdef LCUseTestData
+    NSArray *cities = self.testData;
+    #else
+    NSDictionary *data = [self fetchCitiesFromAPIWithCoordinates:coords radius:kmRadius];
     NSArray *cities = [self parseCities:data[@"list"]];
+    #endif
     
     dispatch_async(dispatch_get_main_queue(), ^{
       result(cities);

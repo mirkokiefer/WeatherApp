@@ -13,6 +13,8 @@
 #import "LCCityStore.h"
 #import "LCCity.h"
 
+#define LCRadius 10
+
 @interface LCTableViewController () {
   NSArray *_cities;
   CLLocationManager *_locationManager;
@@ -35,8 +37,8 @@
   _locationManager = locationManager;
 }
 
-- (void)updateWeatherDataWithLocation:(CLLocation *)location {
-  [LCCityStore citiesAtLocation:location withRadius:10 result:^(NSArray *array) {
+- (void)updateWeatherDataWithCoordinates:(CLLocationCoordinate2D)coords {
+  [LCCityStore citiesAtCoordinates:coords withRadius:LCRadius result:^(NSArray *array) {
     _cities = array;
     [self.tableView reloadData];
   }];
@@ -60,7 +62,7 @@
 #pragma mark - CLLocationManagerDelegate
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
   CLLocation *location = locations.lastObject;
-  [self updateWeatherDataWithLocation:location];
+  [self updateWeatherDataWithCoordinates:location.coordinate];
 }
 
 @end

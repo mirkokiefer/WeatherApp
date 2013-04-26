@@ -13,6 +13,6 @@ typedef void (^ArrayBlock)(NSArray *array);
 
 @interface LCCityStore : NSObject
 
-+ (void)citiesAtLocation:(CLLocation *)location withRadius:(double)kmRadius result:(ArrayBlock)result;
++ (void)citiesAtCoordinates:(CLLocationCoordinate2D)coords withRadius:(int)kmRadius result:(ArrayBlock)result;
 
 @end
