@@ -55,7 +55,8 @@
   LCCity *city = [_cities objectAtIndex:indexPath.row];
   cell.cityLabel.text = city.name;
   cell.temperatureLabel.text = [NSString stringWithFormat: @"%@ °C", city.temperature];
-  cell.conditionLabel.text = city.condition;
+  NSString *iconName = [NSString stringWithFormat:@"%@.PNG", city.conditionIcon];
+  cell.conditionIcon.image = [UIImage imageNamed:iconName];
   return cell;
 }
 

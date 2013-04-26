@@ -16,9 +16,9 @@
 
 + (NSArray *)testData {
   return @[
-    [LCCity cityWithName:@"Heidelberg" temperature:@"12" condition:@"light rain"],
-    [LCCity cityWithName:@"Mannheim" temperature:@"13" condition:@"rain"],
-    [LCCity cityWithName:@"Karlsruhe" temperature:@"11" condition:@"cloudy"]
+    [LCCity cityWithName:@"Heidelberg" temperature:@"12" conditionIcon:@"04d"],
+    [LCCity cityWithName:@"Mannheim" temperature:@"13" conditionIcon:@"05d"],
+    [LCCity cityWithName:@"Karlsruhe" temperature:@"11" conditionIcon:@"09d"]
   ];
 }
 
@@ -32,8 +32,8 @@
     NSNumber *temperatureKelvin = obj[@"main"][@"temp"];
     int temperatureCelsius = [self kelvinToCelsius:temperatureKelvin.floatValue];
     NSString *temperature = [NSString stringWithFormat:@"%i", temperatureCelsius];
-    NSString *condition = obj[@"weather"][0][@"description"];
-    return [LCCity cityWithName:name temperature:temperature condition:condition];
+    NSString *conditionIcon = obj[@"weather"][0][@"icon"];
+    return [LCCity cityWithName:name temperature:temperature conditionIcon:conditionIcon];
   }];
 }
 

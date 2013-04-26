@@ -10,11 +10,11 @@
 
 @implementation LCCity
 
-+ (id)cityWithName:(NSString *)name temperature:(NSString *)temperature condition:(NSString *)condition {
++ (id)cityWithName:(NSString *)name temperature:(NSString *)temperature conditionIcon:(NSString *)condition {
   LCCity *city = [[self alloc] init];
   city.name = name;
   city.temperature = temperature;
-  city.condition = condition;
+  city.conditionIcon = condition;
   return city;
 }
 

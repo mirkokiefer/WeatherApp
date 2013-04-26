@@ -11,6 +11,6 @@
 @interface LCCity : NSObject
 @property (readwrite, strong) NSString *name;
 @property (readwrite, strong) NSString *temperature;
-@property (readwrite, strong) NSString *condition;
-+ (id)cityWithName:(NSString *)name temperature:(NSString *)temperature condition:(NSString *)condition;
+@property (readwrite, strong) NSString *conditionIcon;
++ (id)cityWithName:(NSString *)name temperature:(NSString *)temperature conditionIcon:(NSString *)condition;
 @end

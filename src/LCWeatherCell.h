@@ -11,5 +11,5 @@
 @interface LCWeatherCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel *cityLabel;
 @property (nonatomic, weak) IBOutlet UILabel *temperatureLabel;
-@property (nonatomic, weak) IBOutlet UILabel *conditionLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *conditionIcon;
 @end

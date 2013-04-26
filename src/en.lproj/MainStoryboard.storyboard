@@ -8,51 +8,51 @@
         <scene sceneID="1sU-w4-Yb2">
             <objects>
                 <tableViewController id="jJ3-Iu-uha" customClass="LCTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="f1O-hY-oKE">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="f1O-hY-oKE">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="XW7-Zz-443" customClass="LCWeatherCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="50" id="XW7-Zz-443" customClass="LCWeatherCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="City" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7A4-GW-j7t">
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="200" id="g7h-wE-7O7"/>
+                                                <constraint firstAttribute="height" constant="37" id="hpO-Ha-Zhq"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="14 °C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvJ-xQ-rbH">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="14 °C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvJ-xQ-rbH">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="J75-F3-gMA"/>
+                                                <constraint firstAttribute="width" constant="57" id="pO1-oC-aDW"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="light rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uga-jo-lGR">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="01d.png" translatesAutoresizingMaskIntoConstraints="NO" id="ayO-db-ZMJ"/>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="7A4-GW-j7t" firstAttribute="baseline" secondItem="uga-jo-lGR" secondAttribute="baseline" type="default" id="4m2-cx-8FX"/>
-                                    <constraint firstItem="uga-jo-lGR" firstAttribute="top" secondItem="XW7-Zz-443" secondAttribute="top" constant="20" type="default" id="WVT-Yu-CBa"/>
-                                    <constraint firstItem="7A4-GW-j7t" firstAttribute="centerY" secondItem="XW7-Zz-443" secondAttribute="centerY" type="default" id="Xw8-pD-916"/>
-                                    <constraint firstAttribute="trailing" secondItem="uga-jo-lGR" secondAttribute="trailing" constant="20" type="default" id="d1V-xF-US8"/>
-                                    <constraint firstItem="lvJ-xQ-rbH" firstAttribute="top" secondItem="7A4-GW-j7t" secondAttribute="top" type="default" id="m7S-0P-jgt"/>
+                                    <constraint firstItem="lvJ-xQ-rbH" firstAttribute="centerY" secondItem="ayO-db-ZMJ" secondAttribute="centerY" type="default" id="H2e-AW-gyR"/>
+                                    <constraint firstItem="ayO-db-ZMJ" firstAttribute="top" secondItem="XW7-Zz-443" secondAttribute="top" constant="-1" id="SBx-z4-ao7"/>
+                                    <constraint firstItem="ayO-db-ZMJ" firstAttribute="trailing" secondItem="XW7-Zz-443" secondAttribute="trailing" type="default" id="Zzv-AN-J1X"/>
+                                    <constraint firstItem="ayO-db-ZMJ" firstAttribute="leading" secondItem="lvJ-xQ-rbH" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="cgB-iC-nuj"/>
                                     <constraint firstItem="7A4-GW-j7t" firstAttribute="leading" secondItem="XW7-Zz-443" secondAttribute="leading" constant="20" type="default" id="owG-M1-zTo"/>
-                                    <constraint firstAttribute="trailing" secondItem="lvJ-xQ-rbH" secondAttribute="trailing" constant="20" type="default" id="uvs-PI-GmE"/>
+                                    <constraint firstItem="lvJ-xQ-rbH" firstAttribute="centerY" secondItem="7A4-GW-j7t" secondAttribute="centerY" type="default" id="t86-YW-4j3"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="cityLabel" destination="7A4-GW-j7t" id="nKO-Mx-9FX"/>
-                                    <outlet property="conditionLabel" destination="uga-jo-lGR" id="TNn-wV-vWd"/>
+                                    <outlet property="conditionIcon" destination="ayO-db-ZMJ" id="IF6-ZV-ey2"/>
                                     <outlet property="temperatureLabel" destination="lvJ-xQ-rbH" id="jsG-Ft-SiT"/>
                                 </connections>
                             </tableViewCell>
@@ -68,6 +68,9 @@
             <point key="canvasLocation" x="197" y="55"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01d.png" width="50" height="50"/>
+    </resources>
     <classes>
         <class className="LCTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LCTableViewController.h"/>
@@ -76,7 +79,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LCWeatherCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="cityLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="conditionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="conditionIcon" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="temperatureLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
