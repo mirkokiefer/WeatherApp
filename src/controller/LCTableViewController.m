@@ -31,13 +31,14 @@
 - (void)setupLocationManager {
   CLLocationManager *locationManager = [[CLLocationManager alloc] init];
   locationManager.delegate = self;
-  locationManager.distanceFilter = kCLDistanceFilterNone;
-  locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+  locationManager.distanceFilter = 1000;
+  locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
   [locationManager startUpdatingLocation];
   _locationManager = locationManager;
 }
 
 - (void)updateWeatherDataWithCoordinates:(CLLocationCoordinate2D)coords {
+  NSLog(@"update");
   [LCCityStore citiesAtCoordinates:coords withRadius:LCRadius result:^(NSArray *array) {
     _cities = array;
     [self.tableView reloadData];
