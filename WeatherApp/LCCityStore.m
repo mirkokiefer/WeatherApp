@@ -9,6 +9,9 @@
 #import "LCCityStore.h"
 #import "LCCity.h"
 
+#define LCRadius 10
+#define LCWeatherAPI @"http://api.openweathermap.org/data/2.1/find/city?lat=%f&lon=%f&radius=%i&lang=en"
+
 @implementation LCCityStore
 
 + (NSArray *)testData {
@@ -39,7 +42,7 @@
   float lon = location.coordinate.longitude;
   
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.1/find/city?lat=%f&lon=%f&radius=100&lang=en", lat, lon];
+    NSString *urlString = [NSString stringWithFormat: LCWeatherAPI, lat, lon, LCRadius];
     NSURL *url = [NSURL URLWithString: urlString];
     NSData *json = [NSData dataWithContentsOfURL:url];
     NSDictionary *data = [NSJSONSerialization JSONObjectWithData:json options:0 error:nil];
